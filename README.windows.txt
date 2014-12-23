@@ -113,16 +113,12 @@ boost, vowpal_wabbit, and zlib-1.2.8 are directories inside that directory
 I build boost in c:\boost with the sources in a subdirectory
 If you use another directory modify the vw solution and project macro definitions for BoostIncludeDir and BoostLibDir
 
-
 	Get boost from http://www.boost.org/users/history/version_1_56_0.html
-			
 
 	   open a  Windows command shell
       (a) mkdir c:\boost 
       (b) Download boost_1_56_0.zip from http://sourceforge.net/projects/boost/files/boost/1.56.0/boost_1_56_0.zip/download
       (c) Unzip it in c:\boost which creates the directory boost_1_56_0
-      (d) mkdir c:\boost\x86
-      (e) mkdir c:\boost\x64
  	  
 build the x86 binaries
 	  (f)"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat x86"
