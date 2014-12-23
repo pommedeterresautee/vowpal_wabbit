@@ -92,7 +92,7 @@ boost, vowpal_wabbit, and zlib-1.2.8 are directories inside that directory
 	Batch build the configurations you want of x86 and x64 debut and release
 
     	 or from your Visual Studio Command shell 
-	     cd c:\src\vw\zlib-1.2.0\contrib\vstudio\vc11
+	     cd c:\src\vw\zlib-1.2.8\contrib\vstudio\vc11
 		run the following commands (can skip the last four if you only want 32bit binaries)
 
         "msbuild /p:Configuration=Debug;Platform=Win32 zlibstat.vcxproj"
@@ -120,7 +120,7 @@ If you use another directory modify the vw solution and project macro definition
 	   open a  Windows command shell
       (a) mkdir c:\boost 
       (b) Download boost_1_56_0.zip from http://sourceforge.net/projects/boost/files/boost/1.56.0/boost_1_56_0.zip/download
-      (c) Unzip it which creates the directory boost_1_56_0
+      (c) Unzip it in c:\boost which creates the directory boost_1_56_0
       (d) mkdir c:\boost\x86
       (e) mkdir c:\boost\x64
  	  
@@ -138,7 +138,7 @@ build the x64 binaries
 	  (l) mkdir c:\boost\x64
 	  (m) cd c:\boost\boost_1_56_0
 	  (n) "bootstrap.bat"
-	  (o) ".\b2 --prefix=c:\boost\x64 --build-dir=x64 --toolset=msvc-12.0 address-model=64 install --with-program_options"
+	  (o) "b2 --prefix=c:\boost\x64 --build-dir=x64 --toolset=msvc-12.0 address-model=64 install --with-program_options"
 
 	  
 	  
